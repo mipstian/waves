@@ -14,3 +14,8 @@ Waves is a simple (read: hacked together) EEG display app built for the *Neurosk
 
 * Pair your *MindWave&trade; Mobile* with your iOS device
 * Build and run!
+
+
+[Learn more at my blog](http://giorgiocalderolla.com/brain-waves-swift-and-you.html)
+
+[@mipstian](https://twitter.com/mipstian)
