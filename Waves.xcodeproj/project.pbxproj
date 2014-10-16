@@ -14,7 +14,7 @@
 		4445E4BF19EEAEE200DFAFAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4445E4BD19EEAEE200DFAFAE /* LaunchScreen.xib */; };
 		4445E4D819EEAF6700DFAFAE /* libTGAccessory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4445E4D519EEAF6700DFAFAE /* libTGAccessory.a */; };
 		4445E4DD19EEB0E100DFAFAE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4445E4DC19EEB0E100DFAFAE /* Accelerate.framework */; };
-		4445E4DF19EEB4EF00DFAFAE /* EEGValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445E4DE19EEB4EF00DFAFAE /* EEGValues.swift */; };
+		4445E4DF19EEB4EF00DFAFAE /* EEGSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445E4DE19EEB4EF00DFAFAE /* EEGSnapshot.swift */; };
 		4445E4E119EEB8CA00DFAFAE /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445E4E019EEB8CA00DFAFAE /* WaveView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,7 @@
 		4445E4D719EEAF6700DFAFAE /* TGAccessoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGAccessoryManager.h; sourceTree = "<group>"; };
 		4445E4D919EEAF7500DFAFAE /* Waves-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Waves-Bridging-Header.h"; sourceTree = "<group>"; };
 		4445E4DC19EEB0E100DFAFAE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		4445E4DE19EEB4EF00DFAFAE /* EEGValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEGValues.swift; sourceTree = "<group>"; };
+		4445E4DE19EEB4EF00DFAFAE /* EEGSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEGSnapshot.swift; sourceTree = "<group>"; };
 		4445E4E019EEB8CA00DFAFAE /* WaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +68,7 @@
 		4445E4B119EEAEE200DFAFAE /* Waves */ = {
 			isa = PBXGroup;
 			children = (
-				4445E4DE19EEB4EF00DFAFAE /* EEGValues.swift */,
+				4445E4DE19EEB4EF00DFAFAE /* EEGSnapshot.swift */,
 				4445E4B619EEAEE200DFAFAE /* MainVC.swift */,
 				4445E4E019EEB8CA00DFAFAE /* WaveView.swift */,
 				4445E4E619EFDFE700DFAFAE /* Other Stuff */,
@@ -180,7 +180,7 @@
 			files = (
 				4445E4B719EEAEE200DFAFAE /* MainVC.swift in Sources */,
 				4445E4B519EEAEE200DFAFAE /* AppDelegate.swift in Sources */,
-				4445E4DF19EEB4EF00DFAFAE /* EEGValues.swift in Sources */,
+				4445E4DF19EEB4EF00DFAFAE /* EEGSnapshot.swift in Sources */,
 				4445E4E119EEB8CA00DFAFAE /* WaveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
