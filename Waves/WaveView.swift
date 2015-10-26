@@ -2,11 +2,10 @@ import UIKit
 import QuartzCore
 
 
-private func buildPath(points points: [Int], inBounds bounds: CGRect) -> UIBezierPath {
-    if points.count < 2 { return UIBezierPath() }
+private func buildPath(points points: [Int], inBounds bounds: CGRect) -> UIBezierPath? {
+    guard points.count >= 2 else { return nil }
     
-    let maxValue = points.maxElement()!
-    if maxValue <= 0 { return UIBezierPath() }
+    guard let maxValue = points.maxElement() where maxValue > 0 else { return nil }
     
     let path = UIBezierPath()
     
@@ -48,7 +47,7 @@ public class WaveView: UIView {
     }
     
     public override func drawRect(rect: CGRect) {
-        wave.path = buildPath(points: points, inBounds: bounds).CGPath
+        wave.path = buildPath(points: points, inBounds: bounds)?.CGPath
         
         super.drawRect(rect)
     }
