@@ -1,18 +1,16 @@
 public struct EEGSnapshot {
-    public let delta: Int = 0
-    public let theta: Int = 0
-    public let lowAlpha: Int = 0
-    public let highAlpha: Int = 0
-    public let lowBeta: Int = 0
-    public let highBeta: Int = 0
-    public let lowGamma: Int = 0
-    public let highGamma: Int = 0
+    public let delta: Int
+    public let theta: Int
+    public let lowAlpha: Int
+    public let highAlpha: Int
+    public let lowBeta: Int
+    public let highBeta: Int
+    public let lowGamma: Int
+    public let highGamma: Int
     
     public static let allZeros = EEGSnapshot()
     
-    private init(){}
-    
-    public init(dictionary: NSDictionary) {
+    public init(dictionary: NSDictionary = [:]) {
         func extractPoint(key: String) -> Int {
             return dictionary[key] as? Int ?? 0
         }

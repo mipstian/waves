@@ -49,7 +49,7 @@ class MainVC: UIViewController {
         statusLabel.text = manager.connected ? manager.accessory.name : "Not connected"
         
         func extractBand(extractValue: EEGSnapshot -> Int) -> [Int] {
-            return map(eegHistory, extractValue)
+            return eegHistory.map(extractValue)
         }
         
         deltaView.points = extractBand { $0.delta }
@@ -91,12 +91,12 @@ extension MainVC: TGAccessoryDelegate {
 extension MainVC {
     func loadSavedHistory() {
         if let dictionaryValues = NSUserDefaults.standardUserDefaults().arrayForKey("eegHistory") {
-            eegHistory = map(dictionaryValues) { EEGSnapshot(dictionary: $0 as NSDictionary) }
+            eegHistory = dictionaryValues.map { EEGSnapshot(dictionary: $0 as! NSDictionary) }
         }
     }
     
     func saveHistory() {
-        let dictionaryValues = map(eegHistory) { NSDictionary(eegSnapshot: $0) }
+        let dictionaryValues = eegHistory.map { NSDictionary(eegSnapshot: $0) }
         NSUserDefaults.standardUserDefaults().setObject(dictionaryValues, forKey: "eegHistory")
     }
 }
